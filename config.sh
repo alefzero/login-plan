@@ -72,7 +72,6 @@ echo ""
 echo ""
 echo "Configurando o ambiente em ${PLAN_HELPER_HOME}..."
 
-PLAN_HELPER_HOME=/u01/middleware/domains/login/planHelper
 if [ -d "${PLAN_HELPER_HOME}" ]
 then 
     rm -rf "${PLAN_HELPER_HOME}"
