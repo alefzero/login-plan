@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Gancho para o disparo do redeploy
+# Author: Alexandre Marcelo 
+# Criado em: 2022-Jan-31
+# Github: https://github.com/alefzero
+
 source @PLAN_HELPER_HOME@/setPlanHelperEnv.sh
 
 # Specify any server-specific java command line options by server name or partial match

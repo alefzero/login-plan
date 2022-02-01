@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Este script atualiza a aplicação no servidor especificado
+# Author: Alexandre Marcelo 
+# Criado em: 2022-Jan-31
+# Github: https://github.com/alefzero
+
 DOMAIN_HOME=$1
 SERVER_NAME=$2
 PLAN_APP_NAME=login 

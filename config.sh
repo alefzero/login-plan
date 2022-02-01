@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Este script configura o ambiente para o redeploy
+# Author: Alexandre Marcelo 
+# Criado em: 2022-Jan-31
+# Github: https://github.com/alefzero
+
+
 ERROR_MJIDDLEWARE_NOT_SET=1
 ERROR_DOMAIN_NOT_SET=2
 ERROR_DOMAIN_NOT_FOUND=3
