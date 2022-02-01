@@ -7,7 +7,7 @@
 
 DOMAIN_HOME=$1
 SERVER_NAME=$2
-PLAN_APP_NAME=login 
+PLAN_APP_NAME=webcenterr 
 
 source @PLAN_HELPER_HOME@/setPlanHelperEnv.sh
 
