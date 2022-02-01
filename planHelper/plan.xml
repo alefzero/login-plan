@@ -1,637 +1,546 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <deployment-plan xmlns="http://xmlns.oracle.com/weblogic/deployment-plan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/weblogic/deployment-plan http://xmlns.oracle.com/weblogic/deployment-plan/1.0/deployment-plan.xsd" global-variables="false">
-  <application-name>login.war</application-name>
+  <application-name>webcenter</application-name>
   <variable-definition>
+<variable>
+   <name>SessionDescriptor_CookiePath_CustomSetting</name>
+   <value>/</value>
+</variable>
     <variable>
-      <name>ResourceDescription_loginEmailService_ResRefName_16436356518580</name>
-      <value>loginEmailService</value>
+      <name>ResourceDescription_jdbc/WebCenterDS_ResRefName_16425551334880</name>
+      <value>jdbc/WebCenterDS</value>
     </variable>
     <variable>
-      <name>ResourceDescription_loginDB_ResRefName_16436356518631</name>
-      <value>loginDB</value>
+      <name>ResourceDescription_jdbc/ActivitiesDS_ResRefName_16425551334881</name>
+      <value>jdbc/ActivitiesDS</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.RestritoAction_ServletName_16436356518772</name>
-      <value>org.alefzero.login.actions.RestritoAction</value>
+      <name>ServletDescriptor_biregionservlet_ServletName_16425551334902</name>
+      <value>biregionservlet</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.TrocaSenhaAction_ServletName_16436356518813</name>
-      <value>org.alefzero.login.actions.TrocaSenhaAction</value>
+      <name>ServletDescriptor_ShowPropertyServlet_ServletName_16425551334903</name>
+      <value>ShowPropertyServlet</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.HomeAction_ServletName_16436356518844</name>
-      <value>org.alefzero.login.actions.HomeAction</value>
+      <name>ServletDescriptor_DownloadBinaryServlet_ServletName_16425551334914</name>
+      <value>DownloadBinaryServlet</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.LoginAction_ServletName_16436356518915</name>
-      <value>org.alefzero.login.actions.LoginAction</value>
+      <name>ServletDescriptor_oracle.jaxrs.servlet_ServletName_16425551334925</name>
+      <value>oracle.jaxrs.servlet</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.LogoutAction_ServletName_16436356518936</name>
-      <value>org.alefzero.login.actions.LogoutAction</value>
+      <name>ServletDescriptor_oraclejsp_ServletName_16425551334926</name>
+      <value>oraclejsp</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.ResetAction_ServletName_16436356519017</name>
-      <value>org.alefzero.login.actions.ResetAction</value>
+      <name>ServletDescriptor_Faces Servlet_ServletName_16425551334937</name>
+      <value>Faces Servlet</value>
     </variable>
     <variable>
-      <name>LibraryRef_null_jax-rs_ExactMatch_16436356519158</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_ContentProxyServlet_ServletName_16425551334938</name>
+      <value>ContentProxyServlet</value>
     </variable>
     <variable>
-      <name>LibraryRef_null_jax-rs_ImplementationVersion_16436356519169</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_ImagingServlet_ServletName_16425551334949</name>
+      <value>ImagingServlet</value>
     </variable>
     <variable>
-      <name>LibraryRef_null_jax-rs_SpecificationVersion_164363565191910</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_resources_ServletName_164255513349510</name>
+      <value>resources</value>
     </variable>
     <variable>
-      <name>LibraryRef_null_jax-rs_ContextRoot_164363565192011</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_adflibResources_ServletName_164255513349511</name>
+      <value>adflibResources</value>
     </variable>
     <variable>
-      <name>LibraryRef_null_jax-rs_LibraryName_164363565192112</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_adfAuthentication_ServletName_164255513349612</name>
+      <value>adfAuthentication</value>
     </variable>
     <variable>
-      <name>CdiDescriptor_Policy_164363565192513</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_oracle.webcenter.spaces.internal.view.ws.SpacesWebService_ServletName_164255513349613</name>
+      <value>oracle.webcenter.spaces.internal.view.ws.SpacesWebService</value>
     </variable>
     <variable>
-      <name>CdiDescriptor_ImplicitBeanDiscoveryEnabled_164363565192614</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_SecurityCheckServer_ServletName_164255513349714</name>
+      <value>SecurityCheckServer</value>
     </variable>
     <variable>
-      <name>ResourceDescription_loginEmailService_JNDIName_164363565192615</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_WebcenterEmRegister_ServletName_164255513349715</name>
+      <value>WebcenterEmRegister</value>
     </variable>
     <variable>
-      <name>ResourceDescription_loginEmailService_ResourceLink_164363565192816</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_SitemapGeneratorServlet_ServletName_164255513349816</name>
+      <value>SitemapGeneratorServlet</value>
     </variable>
     <variable>
-      <name>JASPICProvider_AuthConfigProviderName_164363565192917</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_adfportlet_ServletName_164255513349817</name>
+      <value>adfportlet</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.ResetAction_InitAsPrincipalName_164363565193018</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_resourceproxy_ServletName_164255513349918</name>
+      <value>resourceproxy</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.ResetAction_RunAsPrincipalName_164363565193019</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_adfextapplogin_ServletName_164255513349919</name>
+      <value>adfextapplogin</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.ResetAction_DispatchPolicy_164363565193020</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_GetHandler_ServletName_164255513350020</name>
+      <value>GetHandler</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.ResetAction_DestroyAsPrincipalName_164363565193021</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_ProfilePhotoServlet_ServletName_164255513350021</name>
+      <value>ProfilePhotoServlet</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.TrocaSenhaAction_InitAsPrincipalName_164363565193122</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_RTCHttpProxyServlet_ServletName_164255513350122</name>
+      <value>RTCHttpProxyServlet</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.TrocaSenhaAction_RunAsPrincipalName_164363565193223</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_BIGRAPHSERVLET_ServletName_164255513350223</name>
+      <value>BIGRAPHSERVLET</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.TrocaSenhaAction_DispatchPolicy_164363565193424</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_BIGAUGESERVLET_ServletName_164255513350224</name>
+      <value>BIGAUGESERVLET</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.TrocaSenhaAction_DestroyAsPrincipalName_164363565193425</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_MapProxyServlet_ServletName_164255513350325</name>
+      <value>MapProxyServlet</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.HomeAction_InitAsPrincipalName_164363565193526</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_GatewayServlet_ServletName_164255513350326</name>
+      <value>GatewayServlet</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.HomeAction_RunAsPrincipalName_164363565193527</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_WCSessionInvalidationServlet_ServletName_164255513350427</name>
+      <value>WCSessionInvalidationServlet</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.HomeAction_DispatchPolicy_164363565193928</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_adw_ServletName_164255513350528</name>
+      <value>adw</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.HomeAction_DestroyAsPrincipalName_164363565194029</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_JAX-RS/Jersey#1_ServletName_164255513350529</name>
+      <value>JAX-RS/Jersey#1</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.LoginAction_InitAsPrincipalName_164363565194430</name>
-      <value xsi:nil="true"></value>
+      <name>ResourceDescription_jdbc/WebCenterDS_ResRefName_164255513350730</name>
+      <value>jdbc/WebCenterDS</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.LoginAction_RunAsPrincipalName_164363565194531</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_ShowPropertyServlet_ServletName_164255513350731</name>
+      <value>ShowPropertyServlet</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.LoginAction_DispatchPolicy_164363565194532</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_DownloadBinaryServlet_ServletName_164255513350832</name>
+      <value>DownloadBinaryServlet</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.LoginAction_DestroyAsPrincipalName_164363565194933</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_oracle.jaxrs.servlet_ServletName_164255513350833</name>
+      <value>oracle.jaxrs.servlet</value>
     </variable>
     <variable>
-      <name>SecurityRoleAssignment_users_ExternallyDefined_164363565195034</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_rssservlet_ServletName_164255513350934</name>
+      <value>rssservlet</value>
     </variable>
     <variable>
-      <name>SecurityRoleAssignment_users_PrincipalNames_164363565195035</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_adw_ServletName_164255513350935</name>
+      <value>adw</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.RestritoAction_InitAsPrincipalName_164363565195236</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_JAX-RS/Jersey#1_ServletName_164255513351036</name>
+      <value>JAX-RS/Jersey#1</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.RestritoAction_RunAsPrincipalName_164363565195337</name>
-      <value xsi:nil="true"></value>
+      <name>ResourceDescription_jdbc/WebCenterDS_ResRefName_164255513351137</name>
+      <value>jdbc/WebCenterDS</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.RestritoAction_DispatchPolicy_164363565195438</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_ShowPropertyServlet_ServletName_164255513351238</name>
+      <value>ShowPropertyServlet</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.RestritoAction_DestroyAsPrincipalName_164363565195439</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_DownloadBinaryServlet_ServletName_164255513351239</name>
+      <value>DownloadBinaryServlet</value>
     </variable>
     <variable>
-      <name>WeblogicWebApp_ManagedExecutorServices_164363565195440</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_oracle.jaxrs.servlet_ServletName_164255513351340</name>
+      <value>oracle.jaxrs.servlet</value>
     </variable>
     <variable>
-      <name>WeblogicWebApp_ManagedScheduledExecutorServices_164363565195541</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_SearchCrawler_ServletName_164255513351341</name>
+      <value>SearchCrawler</value>
     </variable>
     <variable>
-      <name>WeblogicWebApp_JspDescriptors_164363565195542</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_adw_ServletName_164255513351442</name>
+      <value>adw</value>
     </variable>
     <variable>
-      <name>WeblogicWebApp_ManagedThreadFactories_164363565195543</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_JAX-RS/Jersey#1_ServletName_164255513351443</name>
+      <value>JAX-RS/Jersey#1</value>
     </variable>
     <variable>
-      <name>WeblogicWebApp_AsyncDescriptors_164363565195544</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_SearchAuth_ServletName_164255513351644</name>
+      <value>SearchAuth</value>
     </variable>
     <variable>
-      <name>WeblogicWebApp_ContextRoots_164363565195645</name>
-      <value xsi:nil="true"></value>
+      <name>ResourceDescription_jdbc/WebCenterDS_ResRefName_164255513351745</name>
+      <value>jdbc/WebCenterDS</value>
     </variable>
     <variable>
-      <name>WeblogicWebApp_WlDispatchPolicies_164363565196146</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_biregionservlet_ServletName_164255513351846</name>
+      <value>biregionservlet</value>
     </variable>
     <variable>
-      <name>WeblogicWebApp_Loggings_164363565196147</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_oracle.jaxrs.servlet_ServletName_164255513351947</name>
+      <value>oracle.jaxrs.servlet</value>
     </variable>
     <variable>
-      <name>WeblogicWebApp_SessionDescriptors_164363565196248</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_ShowPropertyServlet_ServletName_164255513351948</name>
+      <value>ShowPropertyServlet</value>
     </variable>
     <variable>
-      <name>WeblogicWebApp_ContainerDescriptors_164363565196249</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_DownloadBinaryServlet_ServletName_164255513352049</name>
+      <value>DownloadBinaryServlet</value>
     </variable>
     <variable>
-      <name>WeblogicWebApp_WorkManagers_164363565196250</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_jersey_ServletName_164255513352050</name>
+      <value>jersey</value>
     </variable>
     <variable>
-      <name>ResourceDescription_loginDB_JNDIName_164363565196251</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_Jersey2Config_ServletName_164255513352151</name>
+      <value>Jersey2Config</value>
     </variable>
     <variable>
-      <name>ResourceDescription_loginDB_ResourceLink_164363565196252</name>
-      <value xsi:nil="true"></value>
+      <name>ServletDescriptor_adw_ServletName_164255513352152</name>
+      <value>adw</value>
     </variable>
     <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.LogoutAction_InitAsPrincipalName_164363565196353</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.LogoutAction_RunAsPrincipalName_164363565196354</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.LogoutAction_DispatchPolicy_164363565196355</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>ServletDescriptor_org.alefzero.login.actions.LogoutAction_DestroyAsPrincipalName_164363565196356</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFResource_null_Name_164363565198657</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFHarvester_null_Enabled_164363565198858</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFHarvester_null_SamplePeriod_164363565198959</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFHarvester_null_HarvestedTypes_164363565198960</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFHarvester_null_Name_164363565198961</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_SNMPNotifications_164363565199162</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_SMTPNotifications_164363565199163</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_ScriptActions_164363565199164</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_Actions_164363565199165</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_Watches_164363565199166</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_Enabled_164363565199267</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_Severity_164363565199268</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_RESTNotifications_164363565199269</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_JMXNotifications_164363565199270</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_Name_164363565199271</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_ThreadDumpActions_164363565199472</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_LogActions_164363565199473</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_ScaleUpActions_164363565199474</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_LogWatchSeverity_164363565199475</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_HeapDumpActions_164363565199476</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_ImageNotifications_164363565199477</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_ScaleDownActions_164363565199578</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFWatchNotification_null_JMSNotifications_164363565199579</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFInstrumentation_null_Includes_164363565199680</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFInstrumentation_null_Enabled_164363565199681</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFInstrumentation_null_Excludes_164363565199682</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFInstrumentation_null_WLDFInstrumentationMonitors_164363565199683</name>
-      <value xsi:nil="true"></value>
-    </variable>
-    <variable>
-      <name>WLDFInstrumentation_null_Name_164363565199784</name>
-      <value xsi:nil="true"></value>
+      <name>SessionDescriptor_CookieMaxAgeSecs_164255514404153</name>
+      <value>-1</value>
     </variable>
   </variable-definition>
   <module-override>
-    <module-name>login.war</module-name>
+    <module-name>webcenter.ear</module-name>
+    <module-type>ear</module-type>
+    <module-descriptor external="false">
+      <root-element>weblogic-application</root-element>
+      <uri>META-INF/weblogic-application.xml</uri>
+      <variable-assignment>
+        <name>SessionDescriptor_CookieMaxAgeSecs_164255514404153</name>
+        <xpath>/weblogic-application/session-descriptor/cookie-max-age-secs</xpath>
+      </variable-assignment>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>application</root-element>
+      <uri>META-INF/application.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>wldf-resource</root-element>
+      <uri>META-INF/weblogic-diagnostics.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>coherence-application</root-element>
+      <uri>portal-caching.gar</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>APP-INF/lib/serviceframework.jar!/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>APP-INF/lib/serviceframework.jar!/META-INF/persistence.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>APP-INF/lib/upgrade-framework.jar!/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>APP-INF/lib/upgrade-framework.jar!/META-INF/persistence.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>APP-INF/lib/survey-adapters-jpa.jar!/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>APP-INF/lib/survey-adapters-jpa.jar!/META-INF/persistence.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>APP-INF/lib/search-model.jar!/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>APP-INF/lib/search-model.jar!/META-INF/persistence.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>APP-INF/lib/peopleconnections-kudos-repository.jar!/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>APP-INF/lib/peopleconnections-kudos-repository.jar!/META-INF/persistence.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>APP-INF/lib/portal-persistence-impl.jar!/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>APP-INF/lib/portal-persistence-impl.jar!/META-INF/persistence.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>APP-INF/lib/peopleconnections-wall-repository.jar!/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>APP-INF/lib/peopleconnections-wall-repository.jar!/META-INF/persistence.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>APP-INF/lib/peopleconnections-profile-repository.jar!/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>APP-INF/lib/peopleconnections-profile-repository.jar!/META-INF/persistence.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>APP-INF/lib/peopleconnections-preference-repository.jar!/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>APP-INF/lib/peopleconnections-preference-repository.jar!/META-INF/persistence.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>APP-INF/lib/activity-streaming-repository.jar!/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>APP-INF/lib/activity-streaming-repository.jar!/META-INF/persistence.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>APP-INF/lib/webcenter-app-core-model.jar!/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>APP-INF/lib/webcenter-app-core-model.jar!/META-INF/persistence.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>APP-INF/lib/analytics-common.jar!/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>APP-INF/lib/analytics-common.jar!/META-INF/persistence.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>APP-INF/lib/peopleconnections-connections-repository.jar!/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>APP-INF/lib/peopleconnections-connections-repository.jar!/META-INF/persistence.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="true">
+      <root-element>persistence-configuration</root-element>
+      <uri>APP-INF/lib/notification-repository.jar!/META-INF/persistence-configuration.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>persistence</root-element>
+      <uri>APP-INF/lib/notification-repository.jar!/META-INF/persistence.xml</uri>
+    </module-descriptor>
+  </module-override>
+  <module-override>
+    <module-name>empty.jar</module-name>
+    <module-type>car</module-type>
+    <module-descriptor external="true">
+      <root-element>weblogic-application-client</root-element>
+      <uri>META-INF/weblogic-application-client.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>application-client</root-element>
+      <uri>META-INF/application-client.xml</uri>
+    </module-descriptor>
+  </module-override>
+  <module-override>
+    <module-name>APP-INF/lib/oracle.ucm.ridc.jar</module-name>
+    <module-type>car</module-type>
+    <module-descriptor external="true">
+      <root-element>weblogic-application-client</root-element>
+      <uri>META-INF/weblogic-application-client.xml</uri>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>application-client</root-element>
+      <uri>META-INF/application-client.xml</uri>
+    </module-descriptor>
+  </module-override>
+  <module-override>
+    <module-name>spaces.war</module-name>
     <module-type>war</module-type>
     <module-descriptor external="false">
       <root-element>weblogic-web-app</root-element>
       <uri>WEB-INF/weblogic.xml</uri>
+    <variable-assignment>
+   <name>SessionDescriptor_CookiePath_CustomSetting</name>
+   <xpath>/weblogic-web-app/session-descriptor/cookie-path</xpath>
+</variable-assignment>
       <variable-assignment>
-        <name>ResourceDescription_loginEmailService_ResRefName_16436356518580</name>
-        <xpath>/weblogic-web-app/resource-description/[res-ref-name="loginEmailService"]/res-ref-name</xpath>
+        <name>ResourceDescription_jdbc/WebCenterDS_ResRefName_16425551334880</name>
+        <xpath>/weblogic-web-app/resource-description/[res-ref-name="jdbc/WebCenterDS"]/res-ref-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ResourceDescription_loginDB_ResRefName_16436356518631</name>
-        <xpath>/weblogic-web-app/resource-description/[res-ref-name="loginDB"]/res-ref-name</xpath>
+        <name>ResourceDescription_jdbc/ActivitiesDS_ResRefName_16425551334881</name>
+        <xpath>/weblogic-web-app/resource-description/[res-ref-name="jdbc/ActivitiesDS"]/res-ref-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.RestritoAction_ServletName_16436356518772</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.RestritoAction"]/servlet-name</xpath>
+        <name>ServletDescriptor_biregionservlet_ServletName_16425551334902</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="biregionservlet"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.TrocaSenhaAction_ServletName_16436356518813</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.TrocaSenhaAction"]/servlet-name</xpath>
+        <name>ServletDescriptor_ShowPropertyServlet_ServletName_16425551334903</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="ShowPropertyServlet"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.HomeAction_ServletName_16436356518844</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.HomeAction"]/servlet-name</xpath>
+        <name>ServletDescriptor_DownloadBinaryServlet_ServletName_16425551334914</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="DownloadBinaryServlet"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.LoginAction_ServletName_16436356518915</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.LoginAction"]/servlet-name</xpath>
+        <name>ServletDescriptor_oracle.jaxrs.servlet_ServletName_16425551334925</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="oracle.jaxrs.servlet"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.LogoutAction_ServletName_16436356518936</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.LogoutAction"]/servlet-name</xpath>
+        <name>ServletDescriptor_oraclejsp_ServletName_16425551334926</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="oraclejsp"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.ResetAction_ServletName_16436356519017</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.ResetAction"]/servlet-name</xpath>
+        <name>ServletDescriptor_Faces Servlet_ServletName_16425551334937</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="Faces Servlet"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>LibraryRef_null_jax-rs_ExactMatch_16436356519158</name>
-        <xpath>/weblogic-web-app/library-ref/[context-root="null",library-name="jax-rs"]/exact-match</xpath>
+        <name>ServletDescriptor_ContentProxyServlet_ServletName_16425551334938</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="ContentProxyServlet"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>LibraryRef_null_jax-rs_ImplementationVersion_16436356519169</name>
-        <xpath>/weblogic-web-app/library-ref/[context-root="null",library-name="jax-rs"]/implementation-version</xpath>
+        <name>ServletDescriptor_ImagingServlet_ServletName_16425551334949</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="ImagingServlet"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>LibraryRef_null_jax-rs_SpecificationVersion_164363565191910</name>
-        <xpath>/weblogic-web-app/library-ref/[context-root="null",library-name="jax-rs"]/specification-version</xpath>
+        <name>ServletDescriptor_resources_ServletName_164255513349510</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="resources"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>LibraryRef_null_jax-rs_ContextRoot_164363565192011</name>
-        <xpath>/weblogic-web-app/library-ref/[context-root="null",library-name="jax-rs"]/context-root</xpath>
+        <name>ServletDescriptor_adflibResources_ServletName_164255513349511</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="adflibResources"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>LibraryRef_null_jax-rs_LibraryName_164363565192112</name>
-        <xpath>/weblogic-web-app/library-ref/[context-root="null",library-name="jax-rs"]/library-name</xpath>
+        <name>ServletDescriptor_adfAuthentication_ServletName_164255513349612</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="adfAuthentication"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>CdiDescriptor_Policy_164363565192513</name>
-        <xpath>/weblogic-web-app/cdi-descriptor/policy</xpath>
+        <name>ServletDescriptor_oracle.webcenter.spaces.internal.view.ws.SpacesWebService_ServletName_164255513349613</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="oracle.webcenter.spaces.internal.view.ws.SpacesWebService"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>CdiDescriptor_ImplicitBeanDiscoveryEnabled_164363565192614</name>
-        <xpath>/weblogic-web-app/cdi-descriptor/implicit-bean-discovery-enabled</xpath>
+        <name>ServletDescriptor_SecurityCheckServer_ServletName_164255513349714</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="SecurityCheckServer"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ResourceDescription_loginEmailService_JNDIName_164363565192615</name>
-        <xpath>/weblogic-web-app/resource-description/[res-ref-name="loginEmailService"]/jndi-name</xpath>
+        <name>ServletDescriptor_WebcenterEmRegister_ServletName_164255513349715</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="WebcenterEmRegister"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ResourceDescription_loginEmailService_ResourceLink_164363565192816</name>
-        <xpath>/weblogic-web-app/resource-description/[res-ref-name="loginEmailService"]/resource-link</xpath>
+        <name>ServletDescriptor_SitemapGeneratorServlet_ServletName_164255513349816</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="SitemapGeneratorServlet"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>JASPICProvider_AuthConfigProviderName_164363565192917</name>
-        <xpath>/weblogic-web-app/jaspic-provider/auth-config-provider-name</xpath>
+        <name>ServletDescriptor_adfportlet_ServletName_164255513349817</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="adfportlet"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.ResetAction_InitAsPrincipalName_164363565193018</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.ResetAction"]/init-as-principal-name</xpath>
+        <name>ServletDescriptor_resourceproxy_ServletName_164255513349918</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="resourceproxy"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.ResetAction_RunAsPrincipalName_164363565193019</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.ResetAction"]/run-as-principal-name</xpath>
+        <name>ServletDescriptor_adfextapplogin_ServletName_164255513349919</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="adfextapplogin"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.ResetAction_DispatchPolicy_164363565193020</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.ResetAction"]/dispatch-policy</xpath>
+        <name>ServletDescriptor_GetHandler_ServletName_164255513350020</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="GetHandler"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.ResetAction_DestroyAsPrincipalName_164363565193021</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.ResetAction"]/destroy-as-principal-name</xpath>
+        <name>ServletDescriptor_ProfilePhotoServlet_ServletName_164255513350021</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="ProfilePhotoServlet"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.TrocaSenhaAction_InitAsPrincipalName_164363565193122</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.TrocaSenhaAction"]/init-as-principal-name</xpath>
+        <name>ServletDescriptor_RTCHttpProxyServlet_ServletName_164255513350122</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="RTCHttpProxyServlet"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.TrocaSenhaAction_RunAsPrincipalName_164363565193223</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.TrocaSenhaAction"]/run-as-principal-name</xpath>
+        <name>ServletDescriptor_BIGRAPHSERVLET_ServletName_164255513350223</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="BIGRAPHSERVLET"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.TrocaSenhaAction_DispatchPolicy_164363565193424</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.TrocaSenhaAction"]/dispatch-policy</xpath>
+        <name>ServletDescriptor_BIGAUGESERVLET_ServletName_164255513350224</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="BIGAUGESERVLET"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.TrocaSenhaAction_DestroyAsPrincipalName_164363565193425</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.TrocaSenhaAction"]/destroy-as-principal-name</xpath>
+        <name>ServletDescriptor_MapProxyServlet_ServletName_164255513350325</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="MapProxyServlet"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.HomeAction_InitAsPrincipalName_164363565193526</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.HomeAction"]/init-as-principal-name</xpath>
+        <name>ServletDescriptor_GatewayServlet_ServletName_164255513350326</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="GatewayServlet"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.HomeAction_RunAsPrincipalName_164363565193527</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.HomeAction"]/run-as-principal-name</xpath>
+        <name>ServletDescriptor_WCSessionInvalidationServlet_ServletName_164255513350427</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="WCSessionInvalidationServlet"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.HomeAction_DispatchPolicy_164363565193928</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.HomeAction"]/dispatch-policy</xpath>
+        <name>ServletDescriptor_adw_ServletName_164255513350528</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="adw"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.HomeAction_DestroyAsPrincipalName_164363565194029</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.HomeAction"]/destroy-as-principal-name</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.LoginAction_InitAsPrincipalName_164363565194430</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.LoginAction"]/init-as-principal-name</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.LoginAction_RunAsPrincipalName_164363565194531</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.LoginAction"]/run-as-principal-name</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.LoginAction_DispatchPolicy_164363565194532</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.LoginAction"]/dispatch-policy</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.LoginAction_DestroyAsPrincipalName_164363565194933</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.LoginAction"]/destroy-as-principal-name</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>SecurityRoleAssignment_users_ExternallyDefined_164363565195034</name>
-        <xpath>/weblogic-web-app/security-role-assignment/[role-name="users"]/externally-defined</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>SecurityRoleAssignment_users_PrincipalNames_164363565195035</name>
-        <xpath>/weblogic-web-app/security-role-assignment/[role-name="users"]/principal-name</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.RestritoAction_InitAsPrincipalName_164363565195236</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.RestritoAction"]/init-as-principal-name</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.RestritoAction_RunAsPrincipalName_164363565195337</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.RestritoAction"]/run-as-principal-name</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.RestritoAction_DispatchPolicy_164363565195438</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.RestritoAction"]/dispatch-policy</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.RestritoAction_DestroyAsPrincipalName_164363565195439</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.RestritoAction"]/destroy-as-principal-name</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WeblogicWebApp_ManagedExecutorServices_164363565195440</name>
-        <xpath>/weblogic-web-app/managed-executor-service</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WeblogicWebApp_ManagedScheduledExecutorServices_164363565195541</name>
-        <xpath>/weblogic-web-app/managed-scheduled-executor-service</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WeblogicWebApp_JspDescriptors_164363565195542</name>
-        <xpath>/weblogic-web-app/jsp-descriptor</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WeblogicWebApp_ManagedThreadFactories_164363565195543</name>
-        <xpath>/weblogic-web-app/managed-thread-factory</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WeblogicWebApp_AsyncDescriptors_164363565195544</name>
-        <xpath>/weblogic-web-app/async-descriptor</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WeblogicWebApp_ContextRoots_164363565195645</name>
-        <xpath>/weblogic-web-app/context-root</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WeblogicWebApp_WlDispatchPolicies_164363565196146</name>
-        <xpath>/weblogic-web-app/wl-dispatch-policy</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WeblogicWebApp_Loggings_164363565196147</name>
-        <xpath>/weblogic-web-app/logging</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WeblogicWebApp_SessionDescriptors_164363565196248</name>
-        <xpath>/weblogic-web-app/session-descriptor</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WeblogicWebApp_ContainerDescriptors_164363565196249</name>
-        <xpath>/weblogic-web-app/container-descriptor</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WeblogicWebApp_WorkManagers_164363565196250</name>
-        <xpath>/weblogic-web-app/work-manager</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>ResourceDescription_loginDB_JNDIName_164363565196251</name>
-        <xpath>/weblogic-web-app/resource-description/[res-ref-name="loginDB"]/jndi-name</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>ResourceDescription_loginDB_ResourceLink_164363565196252</name>
-        <xpath>/weblogic-web-app/resource-description/[res-ref-name="loginDB"]/resource-link</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.LogoutAction_InitAsPrincipalName_164363565196353</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.LogoutAction"]/init-as-principal-name</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.LogoutAction_RunAsPrincipalName_164363565196354</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.LogoutAction"]/run-as-principal-name</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.LogoutAction_DispatchPolicy_164363565196355</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.LogoutAction"]/dispatch-policy</xpath>
-        <origin>planbased</origin>
-      </variable-assignment>
-      <variable-assignment>
-        <name>ServletDescriptor_org.alefzero.login.actions.LogoutAction_DestroyAsPrincipalName_164363565196356</name>
-        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="org.alefzero.login.actions.LogoutAction"]/destroy-as-principal-name</xpath>
+        <name>ServletDescriptor_JAX-RS/Jersey#1_ServletName_164255513350529</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="JAX-RS/Jersey#1"]/servlet-name</xpath>
         <origin>planbased</origin>
       </variable-assignment>
     </module-descriptor>
@@ -639,122 +548,169 @@
       <root-element>web-app</root-element>
       <uri>WEB-INF/web.xml</uri>
     </module-descriptor>
-    <module-descriptor external="true">
-      <root-element>wldf-resource</root-element>
-      <uri>META-INF/weblogic-diagnostics.xml</uri>
+  </module-override>
+  <module-override>
+    <module-name>webcenter-rss.war</module-name>
+    <module-type>war</module-type>
+    <module-descriptor external="false">
+      <root-element>weblogic-web-app</root-element>
+      <uri>WEB-INF/weblogic.xml</uri>
       <variable-assignment>
-        <name>WLDFResource_null_Name_164363565198657</name>
-        <xpath>/wldf-resource/name</xpath>
+        <name>ResourceDescription_jdbc/WebCenterDS_ResRefName_164255513350730</name>
+        <xpath>/weblogic-web-app/resource-description/[res-ref-name="jdbc/WebCenterDS"]/res-ref-name</xpath>
+        <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>WLDFHarvester_null_Enabled_164363565198858</name>
-        <xpath>/wldf-resource/harvester/enabled</xpath>
+        <name>ServletDescriptor_ShowPropertyServlet_ServletName_164255513350731</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="ShowPropertyServlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>WLDFHarvester_null_SamplePeriod_164363565198959</name>
-        <xpath>/wldf-resource/harvester/sample-period</xpath>
+        <name>ServletDescriptor_DownloadBinaryServlet_ServletName_164255513350832</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="DownloadBinaryServlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>WLDFHarvester_null_HarvestedTypes_164363565198960</name>
-        <xpath>/wldf-resource/harvester/harvested-type</xpath>
+        <name>ServletDescriptor_oracle.jaxrs.servlet_ServletName_164255513350833</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="oracle.jaxrs.servlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>WLDFHarvester_null_Name_164363565198961</name>
-        <xpath>/wldf-resource/harvester/name</xpath>
+        <name>ServletDescriptor_rssservlet_ServletName_164255513350934</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="rssservlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>WLDFWatchNotification_null_SNMPNotifications_164363565199162</name>
-        <xpath>/wldf-resource/watch-notification/snmp-notification</xpath>
+        <name>ServletDescriptor_adw_ServletName_164255513350935</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="adw"]/servlet-name</xpath>
+        <origin>planbased</origin>
       </variable-assignment>
       <variable-assignment>
-        <name>WLDFWatchNotification_null_SMTPNotifications_164363565199163</name>
-        <xpath>/wldf-resource/watch-notification/smtp-notification</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_ScriptActions_164363565199164</name>
-        <xpath>/wldf-resource/watch-notification/script-action</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_Actions_164363565199165</name>
-        <xpath>/wldf-resource/watch-notification/action</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_Watches_164363565199166</name>
-        <xpath>/wldf-resource/watch-notification/watche</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_Enabled_164363565199267</name>
-        <xpath>/wldf-resource/watch-notification/enabled</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_Severity_164363565199268</name>
-        <xpath>/wldf-resource/watch-notification/severity</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_RESTNotifications_164363565199269</name>
-        <xpath>/wldf-resource/watch-notification/rest-notification</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_JMXNotifications_164363565199270</name>
-        <xpath>/wldf-resource/watch-notification/jmx-notification</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_Name_164363565199271</name>
-        <xpath>/wldf-resource/watch-notification/name</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_ThreadDumpActions_164363565199472</name>
-        <xpath>/wldf-resource/watch-notification/thread-dump-action</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_LogActions_164363565199473</name>
-        <xpath>/wldf-resource/watch-notification/log-action</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_ScaleUpActions_164363565199474</name>
-        <xpath>/wldf-resource/watch-notification/scale-up-action</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_LogWatchSeverity_164363565199475</name>
-        <xpath>/wldf-resource/watch-notification/log-watch-severity</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_HeapDumpActions_164363565199476</name>
-        <xpath>/wldf-resource/watch-notification/heap-dump-action</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_ImageNotifications_164363565199477</name>
-        <xpath>/wldf-resource/watch-notification/image-notification</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_ScaleDownActions_164363565199578</name>
-        <xpath>/wldf-resource/watch-notification/scale-down-action</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFWatchNotification_null_JMSNotifications_164363565199579</name>
-        <xpath>/wldf-resource/watch-notification/jms-notification</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFInstrumentation_null_Includes_164363565199680</name>
-        <xpath>/wldf-resource/instrumentation/include</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFInstrumentation_null_Enabled_164363565199681</name>
-        <xpath>/wldf-resource/instrumentation/enabled</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFInstrumentation_null_Excludes_164363565199682</name>
-        <xpath>/wldf-resource/instrumentation/exclude</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFInstrumentation_null_WLDFInstrumentationMonitors_164363565199683</name>
-        <xpath>/wldf-resource/instrumentation/wldf-instrumentation-monitor</xpath>
-      </variable-assignment>
-      <variable-assignment>
-        <name>WLDFInstrumentation_null_Name_164363565199784</name>
-        <xpath>/wldf-resource/instrumentation/name</xpath>
+        <name>ServletDescriptor_JAX-RS/Jersey#1_ServletName_164255513351036</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="JAX-RS/Jersey#1"]/servlet-name</xpath>
+        <origin>planbased</origin>
       </variable-assignment>
     </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>web-app</root-element>
+      <uri>WEB-INF/web.xml</uri>
+    </module-descriptor>
   </module-override>
-  <config-root>/u01/middleware/domains/login/./config/deployments/login.war/plan</config-root>
+  <module-override>
+    <module-name>search-crawler.war</module-name>
+    <module-type>war</module-type>
+    <module-descriptor external="false">
+      <root-element>weblogic-web-app</root-element>
+      <uri>WEB-INF/weblogic.xml</uri>
+      <variable-assignment>
+        <name>ResourceDescription_jdbc/WebCenterDS_ResRefName_164255513351137</name>
+        <xpath>/weblogic-web-app/resource-description/[res-ref-name="jdbc/WebCenterDS"]/res-ref-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_ShowPropertyServlet_ServletName_164255513351238</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="ShowPropertyServlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_DownloadBinaryServlet_ServletName_164255513351239</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="DownloadBinaryServlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_oracle.jaxrs.servlet_ServletName_164255513351340</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="oracle.jaxrs.servlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_SearchCrawler_ServletName_164255513351341</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="SearchCrawler"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_adw_ServletName_164255513351442</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="adw"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_JAX-RS/Jersey#1_ServletName_164255513351443</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="JAX-RS/Jersey#1"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>web-app</root-element>
+      <uri>WEB-INF/web.xml</uri>
+    </module-descriptor>
+  </module-override>
+  <module-override>
+    <module-name>search-auth.war</module-name>
+    <module-type>war</module-type>
+    <module-descriptor external="false">
+      <root-element>weblogic-web-app</root-element>
+      <uri>WEB-INF/weblogic.xml</uri>
+      <variable-assignment>
+        <name>ServletDescriptor_SearchAuth_ServletName_164255513351644</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="SearchAuth"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>web-app</root-element>
+      <uri>WEB-INF/web.xml</uri>
+    </module-descriptor>
+  </module-override>
+  <module-override>
+    <module-name>webcenter-rest.war</module-name>
+    <module-type>war</module-type>
+    <module-descriptor external="false">
+      <root-element>weblogic-web-app</root-element>
+      <uri>WEB-INF/weblogic.xml</uri>
+      <variable-assignment>
+        <name>ResourceDescription_jdbc/WebCenterDS_ResRefName_164255513351745</name>
+        <xpath>/weblogic-web-app/resource-description/[res-ref-name="jdbc/WebCenterDS"]/res-ref-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_biregionservlet_ServletName_164255513351846</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="biregionservlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_oracle.jaxrs.servlet_ServletName_164255513351947</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="oracle.jaxrs.servlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_ShowPropertyServlet_ServletName_164255513351948</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="ShowPropertyServlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_DownloadBinaryServlet_ServletName_164255513352049</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="DownloadBinaryServlet"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_jersey_ServletName_164255513352050</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="jersey"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_Jersey2Config_ServletName_164255513352151</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="Jersey2Config"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+      <variable-assignment>
+        <name>ServletDescriptor_adw_ServletName_164255513352152</name>
+        <xpath>/weblogic-web-app/servlet-descriptor/[servlet-name="adw"]/servlet-name</xpath>
+        <origin>planbased</origin>
+      </variable-assignment>
+    </module-descriptor>
+    <module-descriptor external="false">
+      <root-element>web-app</root-element>
+      <uri>WEB-INF/web.xml</uri>
+    </module-descriptor>
+  </module-override>
+  <config-root>/u01/oracle/Middleware/wcportal/archives/applications/plan</config-root>
 </deployment-plan>
